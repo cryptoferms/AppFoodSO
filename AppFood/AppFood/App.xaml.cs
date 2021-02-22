@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppFood.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace AppFood
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new LoginViewPage();
         }
 
         protected override void OnStart()
