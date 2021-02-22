@@ -3,9 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:helpers="clr-namespace:DemoApp.Helpers"
              x:Class="AppFood.Views.LoginViewPage">
-  <ContentPage.Content>
+    <ContentPage.Resources>
+    </ContentPage.Resources>
+    <ContentPage.Content>
         <Grid Padding="20" VerticalOptions="Center">
-            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" VerticalOptions="Center">
+                <Image Source="https://i.imgur.com/CUG0Aof.jpeg"
+                       WidthRequest="100" HeightRequest="300"/>
+                <Label Text="Food App" FontFamily="CabinSketch"
+                       TextColor="Purple" FontSize="40" HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Spacing="10">
+                <Entry Placeholder="Digite seu Usuário" Text="{Binding Username}"/>
+                <Entry Placeholder="Digite sua Senha" Text="{Binding Password}" IsPassword="True"/>
+                <Button Text="Login" HorizontalOptions="Center" BackgroundColor="Purple"
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"/>
+            </StackLayout>
         </Grid>
   </ContentPage.Content>
 </ContentPage>
