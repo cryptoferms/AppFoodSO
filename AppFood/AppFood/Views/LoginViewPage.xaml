@@ -22,6 +22,9 @@
                 <Entry Placeholder="Digite sua Senha" Text="{Binding Password}" IsPassword="True"/>
                 <Button Text="Login" HorizontalOptions="Center" BackgroundColor="Purple"
                         TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"/>
+                <Label Text="Novo usuário?"/>
+                <Button Text="Cadastre-se" HorizontalOptions="Center" BackgroundColor="DarkCyan"
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"/>
             </StackLayout>
         </Grid>
   </ContentPage.Content>
