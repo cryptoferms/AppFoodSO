@@ -44,8 +44,8 @@ namespace AppFood.Services
         public async Task<bool> LoginUsuario(string username, string password)
         {
             var user = (await client.Child("Users")
-                .OnceAsync<User>()).Where(u => u.Object.Username == username)
-                .Where(u => u.Object.Password == password).FirstOrDefault();
+                .OnceAsync<User>()).Where(u => u.Object.Username.Equals(username))
+                .Where(u => u.Object.Password.Equals(password)).FirstOrDefault();
 
             return (user != null);
         }
