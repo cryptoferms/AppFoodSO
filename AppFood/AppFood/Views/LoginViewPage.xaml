@@ -2,9 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:helpers="clr-namespace:DemoApp.Helpers"
+             xmlns:vm="clr-namespace:AppFood.ViewModels"
              x:Class="AppFood.Views.LoginViewPage">
-    <ContentPage.Resources>
-    </ContentPage.Resources>
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel></vm:LoginViewModel>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <Grid Padding="20" VerticalOptions="Center">
             <Grid.RowDefinitions>
@@ -21,10 +23,12 @@
                 <Entry Placeholder="Digite seu Usuário" Text="{Binding Username}"/>
                 <Entry Placeholder="Digite sua Senha" Text="{Binding Password}" IsPassword="True"/>
                 <Button Text="Login" HorizontalOptions="Center" BackgroundColor="Purple"
-                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"/>
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"
+                        Command="{Binding LoginCommand}"/>
                 <Label Text="Novo usuário?"/>
                 <Button Text="Cadastre-se" HorizontalOptions="Center" BackgroundColor="DarkCyan"
-                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"/>
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"
+                        Command="{Binding RegisterCommand}"/>
             </StackLayout>
         </Grid>
   </ContentPage.Content>
