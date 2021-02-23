@@ -1,4 +1,5 @@
 ﻿using AppFood.Services;
+using AppFood.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -85,7 +86,7 @@ namespace AppFood.ViewModels
                 if (Result) 
                 {
                     Preferences.Set("Username", Username);
-                    await Application.Current.MainPage.Navigation.PushModalAsync(new ProductsView());
+                    await Application.Current.MainPage.Navigation.PushModalAsync(new ProductsViewPage());
                 }
                 else
                 {
