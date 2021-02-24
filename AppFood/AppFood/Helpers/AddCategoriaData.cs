@@ -66,6 +66,7 @@ namespace AppFood.Helpers
                         CategoriaID = category.CategoriaID,
                         CategoriaName = category.CategoriaName,
                         CategoriaPoster = category.CategoriaPoster,
+                        ImageUrl = category.ImageUrl
                     });
                 }
             }

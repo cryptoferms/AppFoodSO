@@ -17,7 +17,7 @@
             <StackLayout Grid.Row="0" VerticalOptions="Center">
                 <Image Source="https://i.imgur.com/CUG0Aof.jpeg"
                        WidthRequest="100" HeightRequest="300"/>
-                <Label Text="Food App" FontFamily="CabinSketch "
+                <Label Text="Food App" FontAttributes="Bold" FontFamily="CabinSketch"
                        TextColor="Purple" FontSize="40" HorizontalOptions="Center"/>
             </StackLayout>
             <StackLayout Grid.Row="1" Spacing="10">
