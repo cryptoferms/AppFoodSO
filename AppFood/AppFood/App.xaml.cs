@@ -11,7 +11,7 @@ namespace AppFood
         {
             InitializeComponent();
 
-            MainPage = new LoginViewPage();
+            MainPage = new SettingsPage();
         }
 
         protected override void OnStart()
