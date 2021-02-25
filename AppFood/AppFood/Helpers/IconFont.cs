@@ -1,7 +1,7 @@
 ﻿using System;
-namespace DemoApp.Helpers
+namespace AppFood.Helpers
 {
-	static class IconFont
+	public static class IconFont
 	{
 		public const string VectorSquare = "\U000f0001";
 		public const string AccessPointNetwork = "\U000f0002";
